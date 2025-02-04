@@ -1,0 +1,20 @@
+*{background-color:lavenderblush;}
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(86, 4, 121);
+    outline-style:dashed;
+   outline-color:darkorchid;
+   display: inline;
+}
+
+h2, h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(86, 4, 121);
+}
+
+p, ol{
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
