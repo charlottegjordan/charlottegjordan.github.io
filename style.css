@@ -1,6 +1,21 @@
 *{
     background-color:lavenderblush;
+}
+
+.bodytext{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black
+}
+
+.specialtext{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(173, 0, 92);
+}
+
+.captiontext{
+    display: pre;
+    font-style: italic;
+    font-size: small;
 }
 
 h1{
@@ -20,3 +35,30 @@ table, th, td{
     border: 1px solid black
 }
 
+ul.navigationbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blueviolet
+}
+li.navigation{
+    float: left;
+}
+li.navigation a{
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: blueviolet
+}
+li.navigation a:hover {
+    background-color: #111;
+}
+
+.disciplines{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:darkmagenta;
+    font-weight: bolder;
+}
