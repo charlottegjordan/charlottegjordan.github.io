@@ -13,7 +13,6 @@
 }
 
 .captiontext{
-    display: pre;
     font-style: italic;
     font-size: small;
 }
@@ -57,8 +56,18 @@ li.navigation a:hover {
     background-color: #111;
 }
 
-.disciplines{
+#disciplines{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:darkmagenta;
     font-weight: bolder;
 }
+
+a{
+    color: darkorchid;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: white;
+    }
+  }
