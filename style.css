@@ -1,4 +1,8 @@
-*{background-color:lavenderblush;}
+*{
+    background-color:lavenderblush;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:rgb(86, 4, 121);
@@ -12,9 +16,7 @@ h2, h3{
     color:rgb(86, 4, 121);
 }
 
-p, ol, ul{
-
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+table, th, td{
+    border: 1px solid black
 }
 
