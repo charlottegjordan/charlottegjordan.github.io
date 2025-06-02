@@ -23,6 +23,7 @@ h1{
     outline-style:dashed;
    outline-color:darkorchid;
    display: inline;
+   float: left;
 }
 
 h2, h3{
