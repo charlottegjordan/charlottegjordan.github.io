@@ -74,7 +74,10 @@ a{
 
 
 
-
+div.post {
+  padding: 3px;
+  font-size: smaller;
+}
 
 div.gallery {
   border: 1px solid #ccc;
