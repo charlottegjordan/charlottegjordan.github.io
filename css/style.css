@@ -148,6 +148,8 @@ div.desc {
 .mySlides {
   display: none;
   text-align: center;
+  background-color: rgb(188, 241, 214 / 0.5%);
+  
 }
 
 /* Add a pointer when hovering over the thumbnail images */
