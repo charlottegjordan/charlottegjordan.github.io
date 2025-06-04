@@ -23,42 +23,116 @@
             </ul>
   
           <div class="bodytext">
-            <p>This is a webpage to document my creation process for my artistic projects and displaying the finished products! In the blog section, 
-              I'll rant about some of my favorite art-related topics and opinions.</p>
+            <p>Welcome to my portfolio/blog! Many of my hobbies have long involved arts and crafts, and with this website, I am
+              hoping to document and be more thoughtful about my creation processes. In my blog,
+              I'm looking to engage more intentionally with the art, artists, and art-centered discussions I've long
+              appreciated but rarely taken time to stop and ponder meaningfully. All of this is me trying to grow as a crafter, 
+              writer, and art-appreciator, and hopefully you enjoy my projects and rants! :)
+            </p>
 
             <br>
             
-            <h2>Current Projects</h2>
-            <div class="clearfix"></div>
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="pages/crochet_scarf.html">
-                        <img src="images/scarfwip.png" alt="wip">
-                        </a>
-                        <div class="post">Project</div>
-                        <div class="desc">WIP: Purple Scarf w/ Flower Detail</div>
-                    </div>
-                </div>
+            <h2>Recent Posts</h2>
 
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="pages/quilting_ragquilt.html">
-                        <img src="images/quiltwip.png" alt="wip">
-                        </a>
-                        <div class="post">Project</div>
-                        <div class="desc">WIP: Rag Quilt</div>
-                    </div>
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+              <!-- Full-width images with number text -->
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                  <img src="crochet/blanket.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                  <img src="embriodery/flowerhearthoop.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                  <img src="images/quiltwip.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                  <img src="weaving/Matissetapestry.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                  <img src="images/scarfwip.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                  <img src="weaving/peanutstapestry.jpg" style="width:100%">
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <!-- Image text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <!-- Thumbnail images -->
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="crochet/blanket.jpg" style="width:100%" onclick="currentSlide(1)" alt="Crochet Daisy Blanket">
                 </div>
+                <div class="column">
+                  <img class="demo cursor" src="embroidery/flowerhearthoop.jpg" style="width:100%" onclick="currentSlide(2)" alt="Flower Heart Embroidery Hoop">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="images/quiltwip.png" style="width:100%" onclick="currentSlide(3)" alt="WIP Rag Quilt">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="weaving/Matissetapestry.jpg" style="width:100%" onclick="currentSlide(4)" alt="Matisse Tapestry Weaving">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="images/scarfwip.png" style="width:100%" onclick="currentSlide(5)" alt="WIP Crochet Scarf w/ Flower Detail">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="weaving/peanutstapestry.jpg" style="width:100%" onclick="currentSlide(6)" alt="Peanuts Tapestry Weaving">
+                </div>
+              </div>
             </div>
+                        
 
-          </div>
+<script> 
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
 
-          <div class="fb-like" data-href="https://github.com/charlottegjordan/charlottegjordan.github.io/tree/main" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
-        </body>
-</html>
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://charlottegjordan.github.io">Project 00 Webpage</a> by <span property="cc:attributionName">Charlotte Jordan</span> is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+</script>
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NEMBE5QRY"></script>
