@@ -1,7 +1,6 @@
 body {
     background-image: url("../images/background.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -60,7 +59,7 @@ li.navigation{
 }
 li.navigation a{
     display: block;
-  color: rgb(46, 4, 66);
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -68,7 +67,6 @@ li.navigation a{
 }
 li.navigation a:hover {
     background-color: darkorchid;
-    color: white;
 }
 
 #disciplines{
