@@ -23,15 +23,25 @@ body {
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(86, 4, 121);
+    color: rgb(46, 4, 66);
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: left;
+    border-radius: 25px;
+    background-color: rgb(193, 236, 191);
+    padding: 20px;
+    width: 200px;
+    height: 150px;
 }
 
 h2, h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:rgb(86, 4, 121);
+    color:rgb(46, 4, 66);
+    background-color: rgb(193, 236, 19 / 0.5%);
+    border-radius: 25px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
 }
 
 table, th, td{
@@ -43,21 +53,22 @@ ul.navigationbar{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: blueviolet
+    background-color: rgb(214, 179, 247);
 }
 li.navigation{
     float: left;
 }
 li.navigation a{
     display: block;
-  color: white;
+  color: rgb(46, 4, 66);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: blueviolet
+  background-color: rgb(214, 179, 247);
 }
 li.navigation a:hover {
-    background-color: #111;
+    background-color: darkorchid;
+    color: white;
 }
 
 #disciplines{
