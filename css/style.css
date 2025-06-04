@@ -37,7 +37,7 @@ h1 {
 h2, h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:rgb(46, 4, 66);
-    background-color: rgb(193, 236, 191, 0.5%);
+    background-color: rgba(196, 249, 230, 0.5);
     border-radius: 25px;
     padding: 20px;
     width: 200px;
@@ -159,7 +159,7 @@ div.desc {
 .mySlides {
   display: none;
   text-align: center;
-  background-color: rgb(188, 241, 214, 0.5%);
+  background-color: rgba(196, 249, 230, 0.5);
   
 }
 
