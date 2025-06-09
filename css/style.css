@@ -27,7 +27,7 @@ h1 {
     border-radius: 25px;
     background-color: rgb(193, 236, 191);
     padding: 20px;
-    display: inline
+    display: inline-block
 }
 
 h2, h3{
@@ -36,7 +36,7 @@ h2, h3{
     background-color: rgb(193, 236, 191, 0.5);
     border-radius: 25px;
     padding: 20px;
-    display: inline
+    display: inline-block
 }
 
 table, th, td{
@@ -153,7 +153,7 @@ div.desc {
 .mySlides {
   display: none;
   text-align: center;
-  background-color: rgba(226, 246, 225, 0.5);
+  background-color: rgba(226, 246, 225, 0.8);
   
 }
 
