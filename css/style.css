@@ -18,6 +18,12 @@ body {
     font-size: small;
 }
 
+.projecttext {
+  color:rgb(46, 4, 66);
+  background-color: rgb(248, 200, 208, 0.5);
+  font-size: medium;
+}
+
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(46, 4, 66);
