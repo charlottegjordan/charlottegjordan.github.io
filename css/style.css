@@ -90,11 +90,11 @@ div.post {
 }
 
 div.gallery {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(173, 16, 246);
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid rgb(46, 4, 66);
 }
 
 div.gallery img {
