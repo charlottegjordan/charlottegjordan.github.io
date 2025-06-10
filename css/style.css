@@ -2,6 +2,13 @@ body {
     background-image: url("../images/background.jpg");
 }
 
+.center-container {
+  text-align: center;
+}
+h1.logo {
+  display: inline-block; /* so it respects the text-align of the parent */
+}
+
 
 .bodytext{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
