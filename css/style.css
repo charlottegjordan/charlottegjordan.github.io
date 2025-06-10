@@ -2,6 +2,9 @@ body {
     background-image: url("../images/background.jpg");
 }
 
+h1.logo {
+  text-align: center;
+}
 
 .bodytext{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
