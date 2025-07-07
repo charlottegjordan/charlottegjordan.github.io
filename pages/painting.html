@@ -17,13 +17,22 @@
             </div>
             
             <ul class="navigationbar">
-                <li class="navigation"><a href="../index.html">Home</a></li>
-                <li class="navigation"><a href="crochet.html"> Crochet</a></li>
-                <li class="navigation"><a href="weaving.html">Weaving</a></li>
-                <li class="navigation"><a href="embroidery.html">Embroidery</a></li>
-                <li class="navigation"><a href="quilting.html">Quilting</a></li>
-                <li class="navigation"><a href="painting.html">Painting</a></li>
-              </ul>
+              <li class="navigation"><a href="../index.html">Home</a></li>
+              <li class="navigation"><a href="aboutme.html">About Me</a></li>
+
+              <li class="navigation dropdown">
+                <a href="#" class="dropdown-toggle">Projects <span class="arrow">▼</span></a>
+                <ul class="dropdown-content">
+                  <li><a href="crochet.html">Crochet</a></li>
+                  <li><a href="weaving.html">Weaving</a></li>
+                  <li><a href="embroidery.html">Embroidery</a></li>
+                  <li><a href="quilting.html">Quilting</a></li>
+                  <li><a href="painting.html">Painting</a></li>
+                </ul>
+              </li>
+
+              <li class="navigation"><a href="blog.html">Blog</a></li>
+            </ul>
 
             <h1 class="logo">Painting Projects</h1>
 
@@ -63,3 +72,21 @@
   gtag('config', 'G-9NEMBE5QRY');
 </script>
 
+<script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const toggle = document.querySelector('.dropdown-toggle');
+              const dropdown = document.querySelector('.dropdown-content');
+
+              toggle.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevents the "#" link from jumping
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+              });
+
+              // Optional: Close dropdown if clicking elsewhere
+              document.addEventListener('click', function (event) {
+                if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                  dropdown.style.display = 'none';
+                }
+              });
+            });
+          </script>
