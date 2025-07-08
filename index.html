@@ -182,21 +182,21 @@
               .then(posts => {
                 const container = document.getElementById('blog-preview-container');
 
-                posts.forEach(post => {
-                  const card = document.createElement('div');
-                  card.className = 'blog-card';
+                posts.slice(0, 3).forEach(post => {
+                const card = document.createElement('div');
+                card.className = 'blog-card';
 
-                  card.innerHTML = `
-                    <a href="${post.link}">
-                      <img src="${post.thumbnail}" alt="${post.title}" class="blog-thumbnail">
-                      <h3>${post.title}</h3>
-                      <p class="blog-date">${post.date}</p>
-                      <p class="blog-snippet">${post.snippet}</p>
-                    </a>
-                  `;
+                card.innerHTML = `
+                  <a href="${post.link}">
+                    <img src="${post.thumbnail}" alt="${post.title}" class="blog-thumbnail">
+                    <h3>${post.title}</h3>
+                    <p class="blog-date">${post.date}</p>
+                    <p class="blog-snippet">${post.snippet}</p>
+                  </a>
+                `;
 
-                  container.appendChild(card);
-                });
+                container.appendChild(card);
+              });
               })
               .catch(error => console.error('Error loading blog posts:', error));
           </script>
