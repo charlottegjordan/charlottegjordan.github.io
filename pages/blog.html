@@ -65,7 +65,7 @@
             });
           </script>
           <script>
-            fetch('data/blogPosts.json')
+            fetch('../data/blogPosts.json')
               .then(response => response.json())
               .then(posts => {
                 const container = document.getElementById('blog-preview-container');
