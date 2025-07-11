@@ -1,16 +1,16 @@
 [
   {
-    "title": "Artist Spotlight: Yoshitomo Nara",
-    "date": "Posted July 1, 2025",
-    "snippet": "Learn about trending artist Yoshitomo Nara and hear me reflect on my favorite of his works!",
-    "link": "pages/blog_post1.html",
-    "thumbnail": "images/nara_thumbnail.jpg"
-  },
-  {
     "title": "Photo Diary: Museum-hopping through Vienna",
     "date": "Posted July 11, 2025",
     "snippet": "See some photos of the incredible museums I visited in Vienna!",
     "link": "pages/blog_post2.html",
     "thumbnail": "images/lib14.jpeg"
+  },
+  {
+    "title": "Artist Spotlight: Yoshitomo Nara",
+    "date": "Posted July 1, 2025",
+    "snippet": "Learn about trending artist Yoshitomo Nara and hear me reflect on my favorite of his works!",
+    "link": "pages/blog_post1.html",
+    "thumbnail": "images/nara_thumbnail.jpg"
   }
 ]
