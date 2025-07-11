@@ -1,0 +1,231 @@
+/* ALL PAGES */
+body {
+    background-image: url("../images/background.jpg");
+}
+
+.center-container {
+  text-align: center;
+}
+h1.logo {
+  display: inline-block; /* so it respects the text-align of the parent */
+}
+
+.bodytext{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black
+}
+
+.captiontext{
+    font-style: italic;
+    font-size: small;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(46, 4, 66);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-radius: 25px;
+    background-color: rgb(193, 236, 191);
+    padding: 20px;
+    display: inline-block
+}
+
+h2, h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(46, 4, 66);
+    background-color: rgb(193, 236, 191, 0.5);
+    border-radius: 25px;
+    padding: 20px;
+    display: inline-block
+}
+
+table, th, td{
+    border: 1px solid black
+}
+
+
+
+
+
+
+ul.navigationbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(214, 179, 247);
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+li.navigation {
+    position: relative;
+}
+
+li.navigation a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgb(214, 179, 247);
+}
+
+li.navigation a:hover {
+    background-color: darkorchid;
+}
+
+/* Dropdown menu (hidden by default) */
+ul.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(214, 179, 247);
+    min-width: 160px;
+    z-index: 1000;
+    flex-direction: column;
+    list-style-type: none; /* 👈 Removes bullets from dropdown */
+    padding: 0; /* 👈 Optional: removes extra space */
+    margin: 0;  /* 👈 Optional: removes extra space */
+}
+
+ul.dropdown-content li {
+    width: 100%;
+}
+
+ul.dropdown-content li a {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+ul.dropdown-content li a:hover {
+    background-color: darkorchid;
+}
+
+/* Optional arrow style */
+.arrow {
+    font-size: 0.8em;
+    margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+/* ARTICLE FORMATTING */
+.article-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Georgia, serif;
+  line-height: 1.7;
+  background-color: #ffffffc1;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.article-title {
+  font-size: 2.2em;
+  margin-top: 0;
+  color: #663399;
+}
+
+.article-date {
+  font-size: 0.95em;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.article-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.article-intro {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.article-container h2 {
+  color: #cc6699;
+  margin-top: 30px;
+}
+
+.article-footer {
+  font-style: italic;
+  margin-top: 40px;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+
