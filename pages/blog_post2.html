@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Artist Spotlight: Yoshitomo Nara</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+         <div class="center-container">
+                <h1 class="logo">CGJ Blog/Portfolio</h1>
+         </div>
+        
+
+        <ul class="navigationbar">
+              <li class="navigation"><a href="../index.html">Home</a></li>
+              <li class="navigation"><a href="aboutme.html">About Me</a></li>
+
+              <li class="navigation dropdown">
+                <a href="#" class="dropdown-toggle">Projects <span class="arrow">▼</span></a>
+                <ul class="dropdown-content">
+                  <li><a href="crochet.html">Crochet</a></li>
+                  <li><a href="weaving.html">Weaving</a></li>
+                  <li><a href="embroidery.html">Embroidery</a></li>
+                  <li><a href="quilting.html">Quilting</a></li>
+                  <li><a href="painting.html">Painting</a></li>
+                </ul>
+              </li>
+
+              <li class="navigation"><a href="../blog.html">Blog</a></li>
+            </ul>
+
+            <div class="article-container">
+                <h1 class="article-title">Photo Diary: Museum-hopping through Vienna</h1>
+                <p class="article-date">Posted July 11, 2025</p>
+
+
+                <!-- Kunsthistorisches Museum Wien -->
+                 <h2>Kunsthistoriches Museum Wien</h2>
+                 <p>This is one of my favorite museums I've ever been to, and the temporary
+                    exhibit <i>Arcimboldo, Bassano, Bruegel</i> was one of my absolute favorite
+                    exhibits ever.
+                 </p>
+
+                <h3>Core Exhibit</h3>
+                <div class="row">
+                <div class="column">
+                    <img src="../vienna/kunsthist/kunst1.jpeg" alt="kunst1" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../vienna/kunsthist/kunst2.jpeg" alt="Snow" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../vienna/kunsthist/kunst3.jpeg" alt="Mountains" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../vienna/kunsthist/kunst4.jpeg" alt="Lights" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../vienna/kunsthist/kunst5.jpeg" alt="Lights" onclick="myFunction(this);">
+                </div>
+
+                <h3>Temporary Exhibit</h3>
+                <div class="column">
+                    <img src="../vienna/kunsthist/kunst1.jpeg" alt="Lights" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../vienna/kunsthist/kunst1.jpeg" alt="Lights" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="../vienna/kunsthist/kunst1.jpeg" alt="Lights" onclick="myFunction(this);">
+                </div>
+                
+
+                <!-- The expanding image container -->
+                <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
+
+                <!-- Image text -->
+                <div id="imgtext"></div>
+                </div>
+            </div>
+
+
+
+
+    </body>
