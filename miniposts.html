@@ -17,21 +17,21 @@
             </div>
             
            <ul class="navigationbar">
-              <li class="navigation"><a href="../index.html">Home</a></li>
-              <li class="navigation"><a href="aboutme.html">About Me</a></li>
+              <li class="navigation"><a href="index.html">Home</a></li>
+              <li class="navigation"><a href="pages/aboutme.html">About Me</a></li>
 
               <li class="navigation dropdown">
                 <a href="#" class="dropdown-toggle">Projects <span class="arrow">▼</span></a>
                 <ul class="dropdown-content">
-                  <li><a href="crochet.html">Crochet</a></li>
-                  <li><a href="weaving.html">Weaving</a></li>
-                  <li><a href="embroidery.html">Embroidery</a></li>
-                  <li><a href="quilting.html">Quilting</a></li>
-                  <li><a href="painting.html">Painting</a></li>
+                  <li><a href="pages/crochet.html">Crochet</a></li>
+                  <li><a href="pages/weaving.html">Weaving</a></li>
+                  <li><a href="pages/embroidery.html">Embroidery</a></li>
+                  <li><a href="pages/quilting.html">Quilting</a></li>
+                  <li><a href="pages/painting.html">Painting</a></li>
                 </ul>
               </li>
 
-              <li class="navigation"><a href="../blog.html">Blog</a></li>
+              <li class="navigation"><a href="blog.html">Blog</a></li>
               <li class="navigation"><a href="miniposts.html">Mini-Posts</a></li>
             </ul>
             <h1>Mini-Posts</h1>
@@ -47,7 +47,7 @@
 
 
         <script>
-            fetch('../data/miniPosts.json')
+            fetch('data/miniPosts.json')
                 .then(response => response.json())
                 .then(miniPosts => {
                     const container = document.getElementById('mini-posts-container');
