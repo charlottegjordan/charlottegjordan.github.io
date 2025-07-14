@@ -47,23 +47,24 @@
 
         <script>
             fetch('data/miniPosts.json')
-              .then(response => response.json())
-              .then(miniPosts => {
-                const container = document.getElementById('mini-posts-container');
+                .then(response => response.json())
+                .then(miniPosts => {
+                    const container = document.getElementById('mini-posts-container');
 
-                miniPosts.forEach(post => {
-                  const mini = document.createElement('div');
-                  mini.className = 'mini-post';
+                    miniPosts.forEach(post => {
+                    const mini = document.createElement('div');
+                    mini.className = 'mini-post';
 
-                  mini.innerHTML = `
-                    <p class="mini-date">${post.date}</p>
-                    <p class="mini-content">${post.content}</p>
-                  `;
+                    mini.innerHTML = `
+                        <p class="mini-date">${post.date}</p>
+                        ${post.image ? `<img src="${post.image}" class="mini-image" alt="Mini post image">` : ""}
+                        <p class="mini-content">${post.content}</p>
+                    `;
 
-                  container.appendChild(mini);
-                });
-              })
-              .catch(error => console.error('Error loading mini posts:', error));
+                    container.appendChild(mini);
+                    });
+                })
+                .catch(error => console.error('Error loading mini posts:', error));
           </script>
             
     </body>
