@@ -478,3 +478,51 @@ div.desc {
 }
 
 
+
+
+
+
+
+
+
+/* Container for mini-posts */
+.mini-posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual mini-post */
+.mini-post {
+  background-color: #fdfaf6;
+  border-left: 4px solid #c38eb4; /* soft purple-pink accent */
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  font-family: 'Georgia', serif;
+}
+
+/* Date styling */
+.mini-date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.4rem;
+  font-style: italic;
+}
+
+/* Content text */
+.mini-content {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.mini-post:hover {
+  background-color: #f4eef9;
+  transition: background-color 0.3s ease;
+}
+
+

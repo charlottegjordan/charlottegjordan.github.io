@@ -112,6 +112,11 @@
             <h2>Latest Blog Articles</h2>
             <div id="blog-preview-container" class="blog-preview-container"></div>
 
+
+            <br>
+            <h2>Recent Mini-Posts</h2>
+            <div id="mini-posts-container" class="mini-posts-container"></div>
+
                         
         
           <script> 
@@ -200,6 +205,28 @@
               })
               .catch(error => console.error('Error loading blog posts:', error));
           </script>
+
+          <script>
+            fetch('data/miniPosts.json')
+              .then(response => response.json())
+              .then(miniPosts => {
+                const container = document.getElementById('mini-posts-container');
+
+                miniPosts.slice(0, 3).forEach(post => {
+                  const mini = document.createElement('div');
+                  mini.className = 'mini-post';
+
+                  mini.innerHTML = `
+                    <p class="mini-date">${post.date}</p>
+                    <p class="mini-content">${post.content}</p>
+                  `;
+
+                  container.appendChild(mini);
+                });
+              })
+              .catch(error => console.error('Error loading mini posts:', error));
+          </script>
+
 
         </body>
 
