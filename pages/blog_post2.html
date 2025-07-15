@@ -395,6 +395,34 @@
                 });
             </script>
 
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                const toggle = document.querySelector('.dropdown-toggle');
+                const dropdown = document.querySelector('.dropdown-content');
+
+                toggle.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevents the "#" link from jumping
+                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                });
+
+                // Optional: Close dropdown if clicking elsewhere
+                document.addEventListener('click', function (event) {
+                    if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                    dropdown.style.display = 'none';
+                    }
+                });
+                });
+          </script>
+
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NEMBE5QRY"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-9NEMBE5QRY');
+            </script>
+
 
 
 
