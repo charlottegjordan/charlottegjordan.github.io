@@ -7,8 +7,22 @@ body {
 .center-container {
   text-align: center;
 }
+
+/*
 h1.logo {
-  display: inline-end; /* so it respects the text-align of the parent */
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+.logoimg {
+  height: 300px;
+  width: 280px;
+  border-radius: 25px;
+  border: 5px solid rgb(193, 236, 191);
+  padding: 20px;
 }
 
 .bodytext{
@@ -534,13 +548,6 @@ div.desc {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-
-
-
-.logoimg {
-  height: 300px;
-  width: 280px;
-}
 
 
 
