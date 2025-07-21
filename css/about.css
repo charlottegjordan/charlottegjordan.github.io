@@ -39,3 +39,12 @@
   padding: 8px 12px;
   border-radius: 5px;
 }
+
+.logoimg {
+  height: 320px;
+  width: 300px;
+  border-radius: 25px;
+  border: 5px solid rgb(193, 236, 191);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.649);
+}
