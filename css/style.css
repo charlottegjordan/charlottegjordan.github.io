@@ -8,7 +8,7 @@ body {
   text-align: center;
 }
 h1.logo {
-  display: inline-block; /* so it respects the text-align of the parent */
+  display: inline-end; /* so it respects the text-align of the parent */
 }
 
 .bodytext{
@@ -532,6 +532,14 @@ div.desc {
   margin: 0.5rem 0;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+
+.logoimg {
+  height: 300px;
+  width: 280px;
 }
 
 
