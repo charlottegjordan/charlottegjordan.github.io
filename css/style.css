@@ -15,11 +15,16 @@ h1.logo {
   justify-content: center;
   align-items: center;
 }
-*/
-
+  */
+  /*
+  h1.logo{
+    font-size: large;
+    margin:auto
+  }
+  */
 .logoimg {
-  height: 300px;
-  width: 280px;
+  height: 320px;
+  width: 300px;
   border-radius: 25px;
   border: 5px solid rgb(193, 236, 191);
   padding: 20px;
