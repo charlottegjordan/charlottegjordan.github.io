@@ -264,3 +264,8 @@ ul.dropdown-content li a:hover {
   padding: 2px 6px;
   border-radius: 50%;
 }
+
+.captiontext{
+    font-style: italic;
+    font-size: small;
+}
