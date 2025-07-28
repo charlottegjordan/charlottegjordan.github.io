@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Photo Diary: Museum-hopping Through Warsaw!</title>
+        <link rel="stylesheet" href="../css/photodiary.css">
+    </head>
+
+    <body>
+         <div class="center-container">
+                <a href=../index.html><img class="logoimg" src="../images/logo.png"></a>
+         </div>
+        
+
+        <ul class="navigationbar">
+              <li class="navigation"><a href="../index.html">Home</a></li>
+              <li class="navigation"><a href="aboutme.html">About Me</a></li>
+
+              <li class="navigation dropdown">
+                <a href="#" class="dropdown-toggle">Projects <span class="arrow">▼</span></a>
+                <ul class="dropdown-content">
+                  <li><a href="crochet.html">Crochet</a></li>
+                  <li><a href="weaving.html">Weaving</a></li>
+                  <li><a href="embroidery.html">Embroidery</a></li>
+                  <li><a href="quilting.html">Quilting</a></li>
+                  <li><a href="painting.html">Painting</a></li>
+                </ul>
+              </li>
+
+              <li class="navigation"><a href="../blog.html">Blog</a></li>
+              <li class="navigation"><a href="../miniposts.html">Mini-Posts</a></li>
+            </ul>
+
+
+        <div class="article-container">
+            <h1 class="article-title">Photo Diary: Museum-hopping through Warsaw!</h1>
+            <p class="article-date">Posted July 22, 2025</p>
+
+            <img src="../images/wilanow_thumbnail.jpeg" alt="sqthumbnail" class="article-banner">
+            
+            
+            <p class="article-intro">
+            Take a look at some of the amazing museums I got to visit during my summer in Warsaw!
+            </p>
+
+            <p>
+                Warsaw is an incredible city with a wealth of amazing museums, and in my time interning at POLIN Museum of the History of Polish 
+                Jews this summer, I had the opportunity to visit many of them. As a bit of a disclaimer, this photo diary will only feature the 
+                light-hearted museums I visited in Warsaw. This city has a rich and often tragic history, which I spent much of this summer 
+                studying. This blog and its tone doesn't feel like an appropriate place to explore the memory of Warsaw's tragedies. I also consider 
+                this blog a personal project and would like to keep the professional and academic work I did this summer largely separate. That 
+                being said, I absolutely recommend visiting some of the world-class history museums in Warsaw if you get the opportunity. Here 
+                are a few that I can personally recommend:
+            </p>
+            <ul>
+                <li>POLIN Museum of the History of Polish Jews</li>
+                <li>Museum of Pawiak Prison</li>
+                <li>Museum of Szucha Prison</li>
+            </ul>
+            <p>
+                Now that that disclaimer is out of the way, here are some of the great museums Warsaw has to offer!
+            </p>
+
+            
+
+            
+
+
+
+            
+
+
+        </div>
+
+        <div id="lightbox" class="lightbox">
+                    <span class="close">&times;</span>
+                    <img class="lightbox-content" id="lightbox-img" />
+                </div>
+
+
+
+
+        <script>
+            // Lightbox logic
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const closeBtn = document.querySelector(".close");
+
+            document.querySelectorAll(".image-gallery img").forEach(img => {
+            img.addEventListener("click", () => {
+                lightbox.style.display = "block";
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+            });
+            });
+
+            closeBtn.addEventListener("click", () => {
+            lightbox.style.display = "none";
+            });
+
+            lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = "none";
+            }
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const toggle = document.querySelector('.dropdown-toggle');
+              const dropdown = document.querySelector('.dropdown-content');
+
+              toggle.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevents the "#" link from jumping
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+              });
+
+              // Optional: Close dropdown if clicking elsewhere
+              document.addEventListener('click', function (event) {
+                if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                  dropdown.style.display = 'none';
+                }
+              });
+            });
+          </script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NEMBE5QRY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-9NEMBE5QRY');
+        </script>
+    </body>
+</html>
