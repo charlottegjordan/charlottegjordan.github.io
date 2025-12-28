@@ -537,10 +537,10 @@ div.desc {
 /* Container for mini-posts */
 .mini-posts-container {
   display: flex;
-  flex-direction: row;      /* ⬅️ horizontal */
-  gap: 1rem;
-  padding: 0.5rem;
-  max-width: 900px;
+  flex-wrap: wrap;          /* ⬅️ allows rows */
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 1000px;        /* wider than before */
   margin: 0 auto;
   justify-content: center;
 }
@@ -548,28 +548,30 @@ div.desc {
 /* Individual mini-post */
 .mini-post {
   background-color: #fdfaf6;
-  border-left: 4px solid #c38eb4;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
+  border-left: 5px solid #c38eb4;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
   font-family: 'Georgia', serif;
 
-  width: 30%;           /* ⬅️ three across */
-  min-width: 220px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 420px;             /* ⬅️ horizontal shape */
+  max-width: 100%;
+  min-height: 160px;        /* visual weight */
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 /* Date styling */
 .mini-date {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #999;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.4rem;
   font-style: italic;
 }
 
 /* Content text */
 .mini-content {
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .mini-post:hover {
@@ -579,10 +581,11 @@ div.desc {
 
 .mini-image {
   width: 100%;
-  max-width: 100%; 
-  height: auto;
-  margin: 0.4rem 0;
-  border-radius: 4px;
+  max-width: 100%;
+  max-height: 180px;      /* ⬅️ prevents tall cards */
+  object-fit: cover;
+  margin: 0.5rem 0;
+  border-radius: 6px;
 }
 
 @media only screen and (max-width: 768px) {
