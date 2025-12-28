@@ -582,7 +582,7 @@ div.desc {
 .mini-image {
   width: 100%;
   max-width: 100%;
-  max-height: 300px;      /* ⬅️ prevents tall cards */
+  max-height: 400px;      /* ⬅️ prevents tall cards */
   object-fit: cover;
   margin: 0.5rem 0;
   border-radius: 6px;
