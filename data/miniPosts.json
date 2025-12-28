@@ -1,4 +1,14 @@
-[   {
+[{
+    "date": "2025-12-27",
+    "content":"Some lovely art from Andrea Morgan at Heist Art Gallery in MT, an incredible Montana artist and the subject of the first feature I ever curated!",
+    "image": "images/morgan.jpeg"
+},
+{
+    "date": "2025-12-26",
+    "content":"Obsessed with coloring this winter break!",
+    "image": "images/coloring.jpeg"
+},
+{
     "date": "2025-10-11",
     "content":"Some cool comic book street art in LA",
     "image": "la weekend/streetart.jpeg"
