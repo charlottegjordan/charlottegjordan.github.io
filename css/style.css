@@ -537,34 +537,38 @@ div.desc {
 /* Container for mini-posts */
 .mini-posts-container {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;          /* tighter spacing */
+  flex-direction: row;      /* ⬅️ horizontal */
+  gap: 1rem;
   padding: 0.5rem;
-  max-width: 650px;   /* ⬅️ smaller than articles */
+  max-width: 900px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 /* Individual mini-post */
 .mini-post {
   background-color: #fdfaf6;
   border-left: 4px solid #c38eb4;
-  padding: 0.75rem 1rem;   /* ⬅️ less padding */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 1rem;
   border-radius: 6px;
   font-family: 'Georgia', serif;
+
+  width: 30%;           /* ⬅️ three across */
+  min-width: 220px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Date styling */
 .mini-date {
   font-size: 0.75rem;
   color: #999;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
   font-style: italic;
 }
 
 /* Content text */
 .mini-content {
-  font-size: 0.95rem;  /* was 1.05rem */
+  font-size: 0.9rem;
   line-height: 1.4;
 }
 
@@ -575,7 +579,7 @@ div.desc {
 
 .mini-image {
   width: 100%;
-  max-width: 300px;   /* ⬅️ smaller images */
+  max-width: 100%; 
   height: auto;
   margin: 0.4rem 0;
   border-radius: 4px;
@@ -583,15 +587,12 @@ div.desc {
 
 @media only screen and (max-width: 768px) {
   .mini-posts-container {
+    flex-direction: column;
     max-width: 95%;
   }
 
-  .mini-content {
-    font-size: 0.9rem;
-  }
-
-  .mini-image {
-    max-width: 240px;
+  .mini-post {
+    width: 100%;
   }
 }
 
