@@ -264,6 +264,8 @@ div.desc {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  max-width: 800px;   /* ⬅️ controls overall size */
+  margin: 0 auto;     /* centers it */
 }
 
 /* Hide the images by default */
@@ -272,6 +274,12 @@ div.desc {
   text-align: center;
   background-color: rgba(226, 246, 225, 0.7);
   
+}
+
+.mySlides img {
+  width: 100%;
+  max-height: 400px;     /* ⬅️ keeps it from being too tall */
+  object-fit: contain;  /* keeps full image visible */
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -284,13 +292,13 @@ div.desc {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 45%;
   width: auto;
-  padding: 16px;
+  padding: 10px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -322,8 +330,9 @@ div.desc {
 .caption-container {
   text-align: center;
   background-color: rgb(214, 179, 247);
-  padding: 2px 16px;
+  padding: 6px 12px;
   color: white;
+  font-size: 0.9rem;
 }
 
 .row:after {
@@ -336,6 +345,13 @@ div.desc {
 .column {
   float: left;
   width: 16.66%;
+  padding: 5px;
+}
+
+.column img {
+  max-width: 90px;   /* ⬅️ smaller thumbnails */
+  margin: 0 auto;
+  display: block;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -348,6 +364,19 @@ div.desc {
   opacity: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .mySlides img {
+    max-height: 250px;
+  }
+
+  .column img {
+    max-width: 70px;
+  }
+}
 
 
 
