@@ -40,80 +40,58 @@
             <br>
 
             <h2>Project Diaries</h2>
-            <div class="clearfix"></div>
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="crochet_daisyblanket.html">
-                        <img src="../crochet/blanket.jpg" alt="daisyblanket">
-                        </a>
-                        <div class="desc">Daisy Blanket</div>
-                    </div>
+
+                <div class="gallery-grid">
+                <a href="crochet_daisyblanket.html">
+                    <img src="../crochet/blanket.jpg"
+                        alt="Daisy Blanket"
+                        data-caption="Daisy Blanket">
+                </a>
+
+                <a href="crochet_afflowertote.html">
+                    <img src="../crochet/afflower6.jpg"
+                        alt="Purple African Flower Tote"
+                        data-caption="Purple African Flower Tote">
+                </a>
+
+                <a href="crochet_tulip.html">
+                    <img src="../images/tulipwip.png"
+                        alt="Tulip Tote Bag"
+                        data-caption="WIP: Tulip Tote Bag">
+                </a>
                 </div>
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="crochet_afflowertote.html">
-                        <img src="../crochet/afflower6.jpg" alt="tuliptote">
-                        </a>
-                        <div class="desc">Purple African Flower Tote</div>
-                    </div>
-                </div>
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="crochet_tulip.html">
-                        <img src="../images/tulipwip.png" alt="tuliptote">
-                        </a>
-                        <div class="desc">WIP: Tulip Tote Bag</div>
-                    </div>
-                </div>
+
 
                 <div class="clearfix"></div>
                 <br>
             
-                <h2>Images</h2>
-                <br>
+            <h2>Images</h2>
 
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank">
-                        <img src="../crochet/longstitch1.jpg" alt="long stitch scarf">
-                        </a>
-                        <div class="desc"> Checker Stitch Scarf (Completed 12/26/25)</div>
-                    </div>
-                </div>
-                
+                <div class="gallery-grid">
+                <img src="../crochet/longstitch1.jpg"
+                    alt="Checker Stitch Scarf"
+                    data-caption="Checker Stitch Scarf (Completed 12/26/25)">
 
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" >
-                        <img src="../crochet/purplebandana.JPG" alt="tuliptote">
-                        </a>
-                        <div class="desc">Purple Flower Crochet Bandana (Completed 08/01/25)</div>
-                    </div>
+                <img src="../crochet/purplebandana.JPG"
+                    alt="Purple Flower Crochet Bandana"
+                    data-caption="Purple Flower Crochet Bandana (Completed 08/01/25)">
+
+                <img src="../crochet/purplescarf.jpeg"
+                    alt="Purple Scarf with Flower Motif"
+                    data-caption="Purple Scarf w/ Flower Motif (Completed 6/15/25)">
+
+                <img src="../crochet/starpillow.jpg"
+                    alt="Star Pillow"
+                    data-caption="Star Pillow">
                 </div>
 
-                <br>
-
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank">
-                        <img src="../crochet/purplescarf.jpeg" alt="flowerscarf">
-                        </a>
-                        <div class="desc"> Purple Scarf w/ Flower Motif (Completed 6/15/25)</div>
-                    </div>
+                <div id="lightbox" class="lightbox">
+                    <span class="close">&times;</span>
+                    <img class="lightbox-img">
+                    <p class="lightbox-caption"></p>
                 </div>
 
-                
-                <br>
 
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank">
-                        <img src="../crochet/starpillow.jpg" alt="starpillow">
-                        </a>
-                        <div class="desc">Star Pillow</div>
-                    </div>
-                </div>
-            </div>
             
     </body>
 </html>
@@ -147,3 +125,29 @@
               });
             });
           </script>
+
+          <script>
+            const images = document.querySelectorAll('.gallery-grid img:not(a img)');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.querySelector('.lightbox-img');
+            const caption = document.querySelector('.lightbox-caption');
+            const closeBtn = document.querySelector('.close');
+
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+                caption.textContent = img.dataset.caption;
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+            });
+
+            lightbox.addEventListener('click', e => {
+                if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+                }
+            });
+            </script>

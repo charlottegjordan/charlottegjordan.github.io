@@ -39,54 +39,89 @@
             <br>
 
             <h2>Images</h2>
-            <div class="clearfix"></div>
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank">
-                        <img src="../embroidery/hellokitty.jpg" alt="hellokittycrossstitch">
-                        </a>
-                        <div class="desc">Hello Kitty Cross Stitch (Completed 8/7/25)</div>
-                    </div>
-                </div>
+            <div class="gallery-grid">
+              <img src="../embroidery/hellokitty.jpg"
+                  alt="Hello Kitty Cross Stitch"
+                  data-caption="Hello Kitty Cross Stitch (Completed 8/7/25)">
+
+              <img src="../embroidery/flowerhearthoop.jpg"
+                  alt="Flower Heart Hoop"
+                  data-caption="Flower Heart Kit">
+
+              <img src="../embroidery/ornaments1.jpeg"
+                  alt="Felt Ornaments"
+                  data-caption="Felt Ornaments from Winter Break 2025">
+
+              <img src="../embroidery/ornaments2.jpeg"
+                  alt="Felt Ornaments"
+                  data-caption="Felt Ornaments from Winter Break 2025">
             </div>
-            <div class="clearfix"></div>
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank">
-                        <img src="../embroidery/flowerhearthoop.jpg" alt="flowerhearthoop">
-                        </a>
-                        <div class="desc">Flower Heart Kit</div>
-                    </div>
-                </div>
-              </div>
-        
+
+            <div id="lightbox" class="lightbox">
+              <span class="close">&times;</span>
+              <img class="lightbox-img">
+              <p class="lightbox-caption"></p>
+            </div>
+
+
+
+
+              <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NEMBE5QRY"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-9NEMBE5QRY');
+            </script>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const toggle = document.querySelector('.dropdown-toggle');
+                const dropdown = document.querySelector('.dropdown-content');
+
+                toggle.addEventListener('click', function (event) {
+                  event.preventDefault(); // Prevents the "#" link from jumping
+                  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                });
+
+                // Optional: Close dropdown if clicking elsewhere
+                document.addEventListener('click', function (event) {
+                  if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                    dropdown.style.display = 'none';
+                  }
+                });
+              });
+          </script>
+
+          <script>
+              const images = document.querySelectorAll('.gallery-grid img');
+              const lightbox = document.getElementById('lightbox');
+              const lightboxImg = document.querySelector('.lightbox-img');
+              const caption = document.querySelector('.lightbox-caption');
+              const closeBtn = document.querySelector('.close');
+
+              images.forEach(img => {
+                img.addEventListener('click', () => {
+                  lightbox.style.display = 'flex';
+                  lightboxImg.src = img.src;
+                  caption.textContent = img.dataset.caption;
+                });
+              });
+
+              closeBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+              });
+
+              lightbox.addEventListener('click', e => {
+                if (e.target === lightbox) {
+                  lightbox.style.display = 'none';
+                }
+              });
+          </script>
+
+      
+
         </body>
     </head>
 </html>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NEMBE5QRY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9NEMBE5QRY');
-</script>
-<script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const toggle = document.querySelector('.dropdown-toggle');
-              const dropdown = document.querySelector('.dropdown-content');
-
-              toggle.addEventListener('click', function (event) {
-                event.preventDefault(); // Prevents the "#" link from jumping
-                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-              });
-
-              // Optional: Close dropdown if clicking elsewhere
-              document.addEventListener('click', function (event) {
-                if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
-                  dropdown.style.display = 'none';
-                }
-              });
-            });
-          </script>
