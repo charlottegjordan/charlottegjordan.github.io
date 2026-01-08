@@ -41,31 +41,21 @@
             <br>
             
             <h2>Felting</h2>
-            <br>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank">
-                    <img src="../felting/gnome.jpeg" alt="feltgnomes">
-                    </a>
-                    <div class="desc">Gnomes Felt Hoop</div>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank">
-                    <img src="../felting/hedgehog.jpg" alt="felthedgehog">
-                    </a>
-                    <div class="desc">Hedgehog Felt Hoop</div>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank">
-                    <img src="../felting/ornaments.jpeg" alt="feltornaments">
-                    </a>
-                    <div class="desc">Felt Ornaments</div>
-                </div>
-            </div>
+
+              <div class="gallery-grid">
+                <img src="../felting/gnome.jpeg"
+                    alt="Gnomes Felt Hoop"
+                    data-caption="Gnomes Felt Hoop">
+
+                <img src="../felting/hedgehog.jpg"
+                    alt="Hedgehog Felt Hoop"
+                    data-caption="Hedgehog Felt Hoop">
+
+                <img src="../felting/ornaments.jpeg"
+                    alt="Felt Ornaments"
+                    data-caption="Felt Ornaments">
+              </div>
+
 
 
             <div class="clearfix"></div>
@@ -74,23 +64,17 @@
             <br>
 
             <h2>Painting</h2>
-            <br>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank">
-                    <img src="../painting/beachpainting.jpeg" alt="beach">
-                    </a>
-                    <div class="desc">Beach Painting</div>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank">
-                    <img src="../painting/flowerfield.jpeg" alt="flowerfield">
-                    </a>
-                    <div class="desc">Flower Field Painting</div>
-                </div>
-            </div>
+
+              <div class="gallery-grid">
+                <img src="../painting/beachpainting.jpeg"
+                    alt="Beach Painting"
+                    data-caption="Beach Painting">
+
+                <img src="../painting/flowerfield.jpeg"
+                    alt="Flower Field Painting"
+                    data-caption="Flower Field Painting">
+              </div>
+
 
             <div class="clearfix"></div>
 
@@ -98,36 +82,37 @@
             <br>
 
             <h2>Stained Glass</h2>
-            <br>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank">
-                    <img src="../stainedglass/worskhop7.jpeg" alt="butterflyglass">
-                    </a>
-                    <div class="desc">muWi Workshop Glass Piece</div>
-                </div>
+
+              <div class="gallery-grid">
+                <img src="../stainedglass/worskhop7.jpeg"
+                    alt="muWi Workshop Glass Piece"
+                    data-caption="muWi Workshop Glass Piece">
+              </div>
+
+            <div id="lightbox" class="lightbox">
+              <span class="close">&times;</span>
+              <img class="lightbox-img">
+              <p class="lightbox-caption"></p>
             </div>
+
             
+
+
+
             
-            
-    </body>
-</html>
 
 
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NEMBE5QRY"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NEMBE5QRY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+              gtag('config', 'G-9NEMBE5QRY');
+            </script>
 
-  gtag('config', 'G-9NEMBE5QRY');
-</script>
 
-    
-</body>
-</html>
-<script>
+            <script>
             document.addEventListener('DOMContentLoaded', function () {
               const toggle = document.querySelector('.dropdown-toggle');
               const dropdown = document.querySelector('.dropdown-content');
@@ -144,4 +129,39 @@
                 }
               });
             });
-          </script>
+            </script>
+
+
+
+            <script>
+              const images = document.querySelectorAll('.gallery-grid img');
+              const lightbox = document.getElementById('lightbox');
+              const lightboxImg = document.querySelector('.lightbox-img');
+              const caption = document.querySelector('.lightbox-caption');
+              const closeBtn = document.querySelector('.close');
+
+              images.forEach(img => {
+                img.addEventListener('click', () => {
+                  lightbox.style.display = 'flex';
+                  lightboxImg.src = img.src;
+                  caption.textContent = img.dataset.caption;
+                });
+              });
+
+              closeBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+              });
+
+              lightbox.addEventListener('click', e => {
+                if (e.target === lightbox) {
+                  lightbox.style.display = 'none';
+                }
+              });
+            </script>
+
+            
+    </body>
+</html>
+
+
+
