@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Just a Broad at The Broad</title>
+        <link rel="stylesheet" href="../css/photodiary.css">
+    </head>
+
+    <body>
+         <div class="center-container">
+                <a href=../index.html><img class="logoimg" src="../images/logo.png"></a>
+         </div>
+        
+
+        <ul class="navigationbar">
+              <li class="navigation"><a href="../index.html">Home</a></li>
+              <li class="navigation"><a href="aboutme.html">About Me</a></li>
+
+              <li class="navigation dropdown">
+                <a href="#" class="dropdown-toggle">Projects <span class="arrow">▼</span></a>
+                <ul class="dropdown-content">
+                  <li><a href="crochet.html">Crochet</a></li>
+                  <li><a href="weaving.html">Weaving</a></li>
+                  <li><a href="embroidery.html">Embroidery</a></li>
+                  <li><a href="quilting.html">Quilting</a></li>
+                  <li><a href="misc.html">Misc.</a></li>
+                </ul>
+              </li>
+
+              <li class="navigation"><a href="../blog.html">Blog</a></li>
+              <li class="navigation"><a href="../miniposts.html">Mini-Posts</a></li>
+            </ul>
+
+
+        <div class="article-container">
+            <h1 class="article-title">Just a Broad at The Broad</h1>
+            <p class="article-date">Posted October 11, 2025</p>
+
+            <img src="../images/broadtn.jpeg" alt="lathumbnail" class="article-banner">
+            
+            
+            <p class="article-intro">
+            Here's some of the cool and uncool art I saw at The Broad in LA!
+            </p>
+
+            <p>
+                By virtue of a stupid mistake, I recently found myself near The Broad with nothing to do
+            </p>
+
+            <p>(Favorite works not mentioned are outlined in gold.)</p>
+            <section>
+                <div class="image-gallery">
+                    <img src="../broad/broad1.jpeg">
+                    <img src="../broad/broad2.jpeg">
+                    <img src="../broad/broad3.jpeg">
+                    <img src="../broad/broad4.jpeg">
+                    <img src="../broad/broad5.jpeg">
+                    <img src="../broad/broad6.jpeg">
+                    <img class="favorite" src="../broad/broad7.jpeg">
+                    <img src="../broad/broad9a.jpeg">
+                    <img src="../broad/broad9b.jpeg">
+                    <img src="../broad/broad10a.jpeg">
+                    <img src="../broad/broad10b.jpeg">
+                    <img src="../broad/broad11.jpeg">
+                    <img src="../broad/broad22.jpeg">
+                    <img src="../broad/broad23.jpeg">
+                    <img src="../broad/broad24.jpeg">
+                    <img src="../broad/broad26a.jpeg">
+                    <img src="../broad/broad26b.jpeg">
+                    <img src="../broad/broad28.jpeg">
+                    <img src="../broad/broad29.jpeg">
+                    <img src="../broad/broad30.jpeg">
+                    <img src="../broad/broad31.jpeg">
+                    <img src="../broad/broad32.jpeg">
+                    <img src="../broad/broad33a.jpeg">
+                    <img src="../broad/broad33b.jpeg">
+                    <img src="../broad/broad35.jpeg">
+                    <img class="favorite" src="../broad/broad37a.jpeg">
+                    <img src="../broad/broad37b.jpeg">
+                    <img src="../broad/broad38.jpeg">
+                    <img class="favorite" src="../broad/broad39.jpeg">
+                    <img class="favorite" src="../broad/broad40.jpeg">
+                    <img src="../broad/broad41.jpeg">
+                    <img src="../broad/broad42.jpeg">
+                    <img src="../broad/broad43.jpeg">
+                    <img src="../broad/broad44.jpeg">
+                    <img src="../broad/broad45.jpeg">
+                    <img src="../broad/broad46.jpeg">
+                </div>
+            </section>
+
+            <br>
+            <br>
+
+            <img src="../broad/broad8a.jpeg" height="400" width="500">
+            <section>
+                <div class="image-gallery">
+                    <img src="../broad/broad8b.jpeg">
+                    <img src="../broad/broad8c.jpeg">
+                    <img src="../broad/broad8d.jpeg">
+                </div>
+            </section>
+
+            <br>
+            <br>
+
+            <img src="../broad/broad27.jpeg" height="500" width="400">
+
+            <br>
+            <br>
+
+            <img src="../broad/broad25a.jpeg" height="500" width="400">
+            <section>
+                <div class="image-gallery">
+                    <img src="../broad/broad25b.jpeg">
+                    <img src="../broad/broad25c.jpeg">
+                </div>
+            </section>
+
+            <br>
+            <br>
+
+            <img src="../broad/broad14.jpeg" height="400" width="500">
+            <section>
+                <div class="image-gallery">
+                    <img src="../broad/broad12.jpeg">
+                    <img src="../broad/broad13.jpeg">
+                    <img src="../broad/broad15.jpeg">
+                    <img src="../broad/broad16.jpeg">
+                    <img src="../broad/broad17.jpeg">
+                    <img src="../broad/broad18.jpeg">
+                    <img src="../broad/broad19.jpeg">
+                    <img src="../broad/broad20.jpeg">
+                    <img src="../broad/broad21.jpeg">
+                </div>
+            </section>
+
+            <br>
+            <br>
+
+            <img src="../broad/broad34.jpeg" height="400" width="500">
+
+
+    
+
+
+            
+
+            
+
+
+        </div>
+
+        <div id="lightbox" class="lightbox">
+                    <span class="close">&times;</span>
+                    <img class="lightbox-content" id="lightbox-img" />
+                </div>
+
+
+
+
+        <script>
+            // Lightbox logic
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const closeBtn = document.querySelector(".close");
+
+            document.querySelectorAll(".image-gallery img").forEach(img => {
+            img.addEventListener("click", () => {
+                lightbox.style.display = "block";
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+            });
+            });
+
+            closeBtn.addEventListener("click", () => {
+            lightbox.style.display = "none";
+            });
+
+            lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = "none";
+            }
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const toggle = document.querySelector('.dropdown-toggle');
+              const dropdown = document.querySelector('.dropdown-content');
+
+              toggle.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevents the "#" link from jumping
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+              });
+
+              // Optional: Close dropdown if clicking elsewhere
+              document.addEventListener('click', function (event) {
+                if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                  dropdown.style.display = 'none';
+                }
+              });
+            });
+          </script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NEMBE5QRY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-9NEMBE5QRY');
+        </script>
+    </body>
+</html>
